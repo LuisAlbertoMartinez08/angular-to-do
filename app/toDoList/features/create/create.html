@@ -1,0 +1,13 @@
+
+<navbar></navbar>
+
+<p>
+<div class="createTheItem">
+	<form>
+		To-Do: <input type="text" ng-model='CreateVM.items.toDoItem' name="toDoItem">
+		<br>
+		Due: <input type="date" ng-model='CreateVM.items.dueDate' name="dueDate">
+		<br>
+		<input class="createButton" type="button" value="Create" ng-click="CreateVM.addItem(CreateVM.items.toDoItem, CreateVM.items.dueDate)"> 
+	</form>
+</div>

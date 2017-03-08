@@ -8,17 +8,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="fragment" content="!">
+        <link rel="stylesheet" type="text/css" href="">
         
 
         <!--angular cdn-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 </head>
-<body ng-app="toDoList" >
-    
-    <ui-view></ui-view>
+<body ng-app="toDoList">
+    <h1> To Do List </h1>
 
-    <script src="toDoList/toDoList.module.js"></script>
+    <div class="everything">
+    <ui-view></ui-view>
+    </div>
+<script src="toDoList/toDoList.module.js"></script>
+
+<script src="toDoList/features/create/create.module.js"></script>
+<script src="toDoList/features/create/create.controller.js"></script>
+<script src="toDoList/features/create/create.routes.js"></script>
+
+<script src="toDoList/features/list/list.module.js"></script>
+<script src="toDoList/features/list/list.controller.js"></script>
+<script src="toDoList/features/list/list.routes.js"></script>
+
+<script src="toDoList/features/completed/completed.module.js"></script>
+<script src="toDoList/features/completed/completed.controller.js"></script>
+<script src="toDoList/features/completed/completed.routes.js"></script>
+
+<script src="toDoList/features/components/navbar/navbar.module.js"></script>
+<script src="toDoList/features/components/navbar/navbar.directive.js"></script>
+
+<script src="toDoList/features/components/todo/todo.module.js"></script>
+<script src="toDoList/features/components/todo/todo.directive.js"></script>
+
+<script src="toDoList/features/components/table/table.module.js"></script>
+<script src="toDoList/features/components/table/table.service.js"></script>
 
 </body>
 </html>
